@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>체크박스(장바구니)</title>
+</head>
+<body>
+  <div>
+    <label><input type="checkbox" value="선택1" /><span>선택 1</span></label>
+    <label><input type="checkbox" value="선택2" /><span>선택 2</span></label>
+    <label><input type="checkbox" value="선택3" /><span>선택 3</span></label>
+    <p id="result"></p>
+  </div>
+</body>
+<script>
+  const checkboxes = document.querySelectorAll("input[type='checkbox']")
+  const result = document.querySelector("#result")
+
+  //const childs = new Array();
+
+  NodeList.prototype.find = Array.prototype.find;
+  
+  checkboxes.forEach((checkbox) => {
+    checkbox.addEventListener("click", (e) => {
+
+      // 실습: strong 태그로 변경
+      // 단 innerHTML은 사용 불가!
+      // document05.html을 참조!
+      //1. text로 값을 추가하는 경우
+      // if(e.target.checked){
+      //   result.innerText += e.target.value
+      // }else{
+      //   result.innerText = result.innerText.replace(`${e.target.value}`, "")
+      // }
+
+      // 2. 요소를 추가하는 경우
+      if(e.target.checked){
+        const newChild = document.createElement("strong");
+        newChild.innerText = e.target.value;
+        result.appendChild(newChild);
+        //childs.push(newChild);
+      }else{
+        const removeChild = result.childNodes.find((target) => target.innerText === e.target.value);//childs.find((target) => target.innerText === e.target.value);
+        //childs.splice(childs.indexOf(removeChild), 1);
+        result.removeChild(removeChild);
+      }
+    })
+  })
+</script>
+</html>

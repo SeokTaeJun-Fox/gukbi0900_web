@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>썸네일 이미지</title>
+</head>
+<body>
+  <form>
+    <div class="wrap">
+      <label for="attach">
+        <div class="image"></div>
+      </label>
+      <div class="cancel"></div>
+    </div>
+    <input type="file" id="attach">
+  </form>
+</body>
+<script>
+  const input = document.querySelector("#attach");
+  const thumbnail = document.querySelector(".image");
+  const cancel = document.querySelector(".cancel");
+
+  //폼필드의 속성이 변경했을때 change
+  input.addEventListener("change", (e) => {
+    const reader = new FileReader();
+    reader.readAsDataURL(e.target.files[0]);
+    reader.onload = (e) => {
+      //console.log(e.target.result);
+      cancel.style.display = "block";
+
+      if(e.target.result.includes("image"))
+      {
+        thumbnail.style.backgroundImage = `url('${e.target.result}')`;
+        console.log(e.target.result);
+      }
+      else
+      {
+        thumbnail.style.backgroundImage = `url('/day11/file/images/default.jpg')`
+      }
+    }
+    //console.log(e.target.files[0]);
+  })
+
+  cancel.addEventListener("click", (e) => {
+    input.value = "";
+    thumbnail.style.backgroundImage =  `url('/day11/file/images/default.jpg')`
+    cancel.style.display = "none";
+  })
+</script>
+</html>

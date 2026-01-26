@@ -1,0 +1,9 @@
+/* 
+  백그라운드 이미지 사용법의 예시입니다.
+*/
+#image-wrapper {
+  padding-top: calc(100% / 376 * 251);  /* (100% / 가로비율 * 세로비율) */
+  background-image: url(/day02/images/calc_image.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}

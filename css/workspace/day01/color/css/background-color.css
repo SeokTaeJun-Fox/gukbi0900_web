@@ -1,0 +1,16 @@
+.item {
+  width: 200px;
+  height: 200px;
+}
+
+.red-bg {
+  background-color: #FF0000;
+}
+
+.blue-bg {
+  /* 투명도값을 반영하고싶다면 rgba (0~255, 0~255, 0~255, 0~1)  a는 alpha(투명값) */
+  background-color: rgba(0, 0, 255, 0.5);
+  
+  /* 꼭지점 부분 둥글게 (원형으로 만들고싶다면 크기의 절반값을 입력한다.) */
+  border-radius: 100px;
+}

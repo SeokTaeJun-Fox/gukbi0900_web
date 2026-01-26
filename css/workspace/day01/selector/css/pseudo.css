@@ -1,0 +1,55 @@
+/* 
+  가상 클래스(:)
+  :link - 방문한 적이 없는 링크 (a 태그에서만 적용)
+  :visited - 방문한 적이 있는 링크 (a 태그에서만 적용)
+  :hover - 마우스를 롤오버 했을 때
+  :active - 마우스를 클릭 했을 때
+*/
+
+/* 
+a 태그의 text-decoration 기본값은 underline이므로 지울려면 none으로 써야된다.
+*/
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: green;
+}
+
+a:link {
+  color: pink;
+}
+
+a:hover {
+  background-color: black;
+  color: white;
+}
+
+a:active {
+  background-color: violet;
+}
+
+/* 
+  가상요소(::)
+  before : before가 선택된 요소의 맨 첫번째 자식으로 요소를 하나 생성한다.
+  after : after가 선택된 요소의 맨 마지막 자식으로 요소를 하나 생성한다.
+*/
+a::after {
+  content: "안녕!";
+}
+
+a::before{
+  content: "링크: ";
+}
+
+/* 
+  id가 container인 대상 뒤에 가로 세로 20px, orange컬러의 박스 붙이기
+*/
+#container {
+  display: block;
+  background-color: orange;
+  width: 20px;
+  height: 20px;
+  content: "";
+} 

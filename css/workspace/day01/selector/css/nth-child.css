@@ -1,0 +1,57 @@
+/* 
+  container아이디를 갖은 태그의 자식(li)중 2번째 li태그
+*/
+#container > li:nth-child(2) {
+  color: purple;
+}
+
+/* 
+  container아이디를 갖은 태그의 자식(li)중 첫번째 li태그
+*/
+#container > li:first-child {
+  color: orange;
+}
+
+/* 
+  container아이디를 갖은 태그의 자식(li)중 마지막 li태그
+*/
+#container > li:last-child {
+  color: tomato;
+}
+
+/* 
+  마지막 자식중 3번째
+*/
+#container > li:last-child(3) {
+  color: yellow;
+}
+
+/* 
+  2번째부터 끝까지
+*/
+#container > li:nth-child(n + 2) {
+  color: pink;
+}
+
+/* 
+  처음부터 2까지
+*/
+#container > li:nth-child(-n + 2) {
+  color: pink;
+}
+
+/* 
+  3번째부터 7번째까지
+*/
+#container > li:nth-child(n+3):nth-child(-n+7)
+{
+  color: orange;
+}
+
+/* 
+짝수번째 li 태그의 글자만 오렌지 컬러로 변경
+*/
+#container > li:nth-child(2n)
+{
+  color: orange;
+}

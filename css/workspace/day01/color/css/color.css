@@ -1,0 +1,45 @@
+/* 
+  각 컬러를 16진수, 2진수로 표현하기
+*/
+
+/* 
+  cyan 컬러 16진수로 표현
+*/
+#p-cyan16 {
+  color: #00ffff;   /* #0FF*/
+}
+
+/* 
+  cyan 컬러 2진수로 표현
+*/
+#p-cyan2 {
+  color: rgb(0, 255, 255);
+}
+
+/* 
+  magenta 컬러 16진수로 표현
+*/
+#p-magenta16 {
+  color: #ff00ff; /* #F0F*/
+}
+
+/* 
+  magenta 컬러 2진수로 표현
+*/
+#p-magenta2 {
+  color: rgb(255, 0, 255); 
+}
+
+/* 
+  green 컬러 16진수로 표현
+*/
+#p-green16 {
+  color: #00ff00;
+}
+
+/* 
+  green 컬러 2진수로 표현
+*/
+#p-green2 {
+  color: rgb(0, 255, 0);
+}

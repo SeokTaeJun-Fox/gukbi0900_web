@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>입력박스(input)</title>
+</head>
+<body>
+
+  <form action="dd">
+    <fieldset>
+      <legend>학과명</legend>
+      <span>학과명: </span><input type="text" name="department" list="dep-list" />
+      <datalist id="dep-list">
+        <option value="컴퓨터공학과"></option>
+        <option value="영어영문과"></option>
+        <option value="경영학과"></option>
+        <option value="사회체육과"></option>
+      </datalist>
+    </fieldset>
+
+    <fieldset>
+      <legend>성별</legend>
+      <label>
+        <span>남자</span><input type="radio" name="gender" value="남자" />
+      </label>
+      <label>
+        <span>여자</span><input type="radio" name="gender" value="여자">
+      </label>
+      <label>
+        <span>성별안함</span><input type="radio" name="gender" value="선택안함">
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend>취미</legend>
+      <label><span>코딩</span><input type="checkbox" name="hobby" value="코딩"></label>
+      <label><span>코딩게임</span><input type="checkbox" name="hobby" value="코딩게임"></label>
+      <label><span>코딩영화관람</span><input type="checkbox" name="hobby" value="코딩영화관람"></label>
+      <label><span>코딩민턴</span><input type="checkbox" name="hobby" value="코딩민턴"></label>
+      <label><span>코딩런</span><input type="checkbox" name="hobby" value="코딩런"></label>
+    </fieldset>
+
+    <fieldset>
+      <legend>학과</legend>
+      <select name="major">
+        <option value="computer">컴퓨터공학과</option>
+        <option value="model">모델학과</option>
+        <option value="nurse">간호학과</option>
+        <option value="music">실용음악과</option>
+      </select>
+    </fieldset>
+
+    <fieldset>
+      <legend>파일</legend>
+      <label for="profile">
+        <img src="./images/day2_img.PNG" alt="기본">
+      </label>
+      <input 
+        style="display: none;"
+        type="file" id="profile" name="profile"
+        />
+    </fieldset>
+
+    <fieldset>
+      <legend>그 외</legend>
+      <span>색상</span><input type="color" name="color" />
+      <span>날짜</span><input type="date" name="date" />
+      <span>날짜</span><input type="datetime-local" name="datetime-local" />
+      <span>참여 인원</span><input type="number" name="number" value="1" min="0" max="100" step="5" />
+      <span>단계(상, 중, 하)</span><input type="range" name="range" value="1" min="1" max="3" />
+    </fieldset>
+
+  </form>
+  <!-- 
+
+  -->
+</body>
+</html>

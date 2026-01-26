@@ -1,0 +1,22 @@
+
+#img1 {
+  width: 300px;
+  height: 300px;
+
+  /* 정중앙 배치(추천1) */
+  /* left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); */
+}
+
+/* 
+  1. 캐릭터를 하나 가져와서
+  transform을 이용하여 오른쪽 200px
+  60도 각도로 돌리기
+*/
+#img2 {
+  width: 300px;
+  height: 300px;
+
+  transform: translate(200px, 0) rotate(60deg);
+}

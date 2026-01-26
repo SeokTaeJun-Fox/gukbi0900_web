@@ -1,0 +1,29 @@
+html{
+    font-size: 50px;
+}
+
+h1 {
+    /* font-size: 16px; */
+    font-size: 1rem;
+}
+
+/* 
+    h1태그 32사이즈
+    p태그 16사이즈
+    span태그 32사이즈
+    strong태그 64사이즈
+*/
+p {
+    /* font-size: 0.5em; */
+    font-size: 1.25rem;
+}
+
+span {
+    /* font-size: 2em; */
+    font-size: 1.5rem;
+}
+
+strong {
+    /* font-size: 2em */
+    font-size: 1.75rem;
+}

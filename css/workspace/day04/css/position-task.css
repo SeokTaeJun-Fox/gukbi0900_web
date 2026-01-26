@@ -1,0 +1,38 @@
+#wrapper {
+  width: 800px;
+}
+
+#img {
+  width: 100%;
+  background-image: url(/day04/images/position-task01.jpg);
+  background-size: 100%;
+  padding-top: calc(100% / 1943 * 897);
+
+  position: relative;
+}
+
+.circle {
+  position: absolute;
+  z-index: 10;
+  width: 60px;
+}
+
+.circle1 {
+    top: 41px;
+    right: 0px;
+}
+
+.circle2 {
+    right: 42px;
+    bottom: 100px;
+}
+
+.circle3 {
+    bottom: 49px;
+    left: calc(50% + -18px);
+}
+
+.circle4 {
+  bottom: 21px;
+  right: 149px;
+}

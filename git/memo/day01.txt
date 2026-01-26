@@ -1,0 +1,79 @@
+1. 형상관리 시작
+   git init
+
+2. 형상관리 상태 확인
+   git status
+
+3. 변경된 파일 스테이징 추가
+   git add 파일명.확장자   
+   git add . 
+
+   언스테이징
+   git restore --staged [파일명]
+
+
+4. 형상관리 상태 확인
+   git status
+
+5. 새로운 버전 생성
+   git commit -m "커밋 설명"
+   git commit -m "게시판, 댓글 기능 추가"
+
+6. 버전 확인
+   git log
+   git log --pretty=oneline
+   git log --oneline
+
+7. 버전 이동
+   git checkout [버전]
+   1. 잠시 이전 버전의 코드를 확인하기 위한 목적
+
+   git checkout [브랜치]
+   2. 작업하고 있는 브랜치로 이동
+   
+8. 모든 작업을 되돌리고, 최신 버전으로 이동
+   git reset --soft [버전] 또는 [브랜치]
+   1. 최신 버전의 작업물을 되돌릴 때,
+   커밋 직전 스테이징 상태로 되돌린다.
+
+   git reset --hard [버전] 또는 [브랜치]
+   2. 최신 버전의 작업물을 되돌릴 때, 
+   ※주의사항, 되돌린 후 최신버전으로 돌아갈 수 없다.
+
+
+   
+==========================================================
+브랜치
+   - 서비스 1개당 1개의 브랜치를 생성
+   - merge후 삭제되는 1회성 데이터
+
+1. 브랜치 확인
+   git branch
+
+2. 브랜치 생성
+   git branch [브랜치이름]
+   git checkout -b [브랜치이름]
+
+3. 브랜치 삭제
+   git branch -d [브랜치이름]
+   
+4. 브랜치 합치기
+   git merge [브랜치명]
+   ※ 대부분 main 브랜치에서 +@로 구현된 서비스를 추가할 때 사용한다.
+   단, 브랜치 작업중 다른 팀원이 작업을 완료한 서비스가 main 브렌치에 있을 경우
+   브랜치에서 main 브랜치를 merge할 수도 있다.   
+===================================================================
+깃허브 레포지토리 관리
+
+1. 내 레포지토리 경로
+   git remote add [변수명] "경로"
+   git remote add origin "레포지토리 경로"
+
+2. remote 레포지토리 삭제
+   git remote remove [변수명]
+
+3. 내 레포지토리에 push하기위한 명령어
+   git push origin main
+
+4. 팀 오가니제이션에서 내 로컬로 파일을 pull하기 위한 명령어
+   git pull project main

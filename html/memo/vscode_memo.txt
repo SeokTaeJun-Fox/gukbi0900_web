@@ -1,0 +1,53 @@
+vscode
+> extension (korean, prettier - Code formatter, Auto Rename Tag, Live Server,	Html5 Reset Css)
+> 톱니바퀴(설정) > font검색 > Font Ligatures > settings.json에서 편집 > 
+> 설정 > live검색 > Live Server > Settings : Custom Browser > Chrome
+
+> 설정 > 바로가기 키 > 줄 삭제 검색 > 키 바인딩 : ctrl + D
+> 설정 > 바로가기 키 > 아래로 셀 복사 검색 > 키 바인딩 : shift alt DownArrow 
+> 설정 > 바로가기 키 > 아래로 셀 이동 검색 > 키 바인딩 : alt DownArrow
+> 설정 > 바로가기 키 > 위로 셀 복사 검색 > 키 바인딩 : shift alt UpArrow
+> 설정 > 바로가기 키 > 위로 셀 이동 검색 > 키 바인딩 : alt UpArrow
+
+ctrl + ` : 터미널
+alt + l + o : html 실행 (라이브 서버)
+ctrl + shift + z : redo
+alt + 구간 클릭 : 구간 클릭 모두 타이핑 가능
+
+vscode (html)
+> ! + tab : html의 기본적인 소스를 추가한다.
+> ! + cssreset
+> 한줄선택 > f1 > 약어로 래핑 > 태그 입력
+> ctrl + / : 주석문 추가
+> https://developer.mozilla.org/ko/docs/Web/HTML/Reference/Elements 	html문서
+> 순서있는리스트 : ol , 순서없는리스트 : ui
+
+font > Font Ligatures > setting.json
+
+{
+  "files.autoSave": "afterDelay",
+  "editor.fontSize": 16,
+  "editor.tabSize": 2,
+  "editor.fontLigatures": false,
+  "explorer.compactFolders": false,
+  "window.zoomLevel": 2,
+  "editor.minimap.enabled": false,
+  "terminal.integrated.fontSize": 16,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "editor.stickyScroll.enabled": false,
+  "workbench.tree.enableStickyScroll": false,
+  "files.autoSaveDelay": 0,
+  "workbench.colorTheme": "Default Light+",
+  "liveServer.settings.port": 5501,
+  "editor.fontVariations": false,
+  "explorer.confirmDelete": false,
+  "workbench.editor.empty.hint": "hidden",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "python.createEnvironment.trigger": "off",
+  "liveServer.settings.CustomBrowser": "chrome",
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "debug.disassemblyView.showSourceCode": false
+}

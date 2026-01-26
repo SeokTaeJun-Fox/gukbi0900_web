@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="https://login.coupang.com/favicon.ico" type="image/x-icon">
+  <title>회원가입</title>
+</head>
+<body>
+  <center>
+    <div> 
+      <img src="https://static.coupangcdn.com/image/static/login/logo-coupang.x2.20201201.png" alt="" />
+    </div>
+    <div>
+      <h3>회원정보를 입력해주세요</h3>
+    </div>
+
+    <form action="#submit">
+      <div>
+        <label>
+          <span>아이디</span><input type="text" placeholder="아이디(이메일)" name="id" />
+        </label>
+      </div>
+
+      <div>
+        <label>
+          <span>비밀번호</span><input type="password" placeholder="비밀번호" name="passwd"  />
+        </label>
+      </div>
+
+      <div>
+        <label>
+          <span>비밀번호 확인</span><input type="password" placeholder="비밀번호 확인" name="passwd-c" />
+        </label>
+      </div>
+
+      <div>
+        <label>
+          <span>이름</span><input type="text" placeholder="이름" name="name" />
+        </label>
+      </div>
+
+      <div>
+        <label for="phone-number">
+          <span>휴대폰번호</span>
+          <span>
+            <select name="phone-frone-num">
+              <option value="korea">+82</option>
+              <option value="nokorea">+80</option>
+              <option value="seventyeight">+78</option>
+            </select>
+            <input type="text" placeholder="휴대폰 번호"  name="phone-number"/>
+          </span>
+        </label>
+      </div>
+
+      <hr />
+
+      <div>
+        <label>
+          <input type="checkbox" name="check" />
+          <span><b>모두 확인하였으며 동의합니다.</b></span>
+        </label>
+        <p>
+          전체 동의에는 필수 및 선택 정보에 대한 동의가 포함되어 있으며, 개별적으로 동의를 선택 하실 수 있습니다. 선택 항목에 대한 동의를 거부하시는 경우에도 서비스 이용이 가능합니다.
+        </p>
+
+        <table border="1">
+          <tr>
+            <td>
+              <div><label><input type="checkbox" name="c1" /><span>[필수] 만 14세 이상입니다</span></label></div>
+              <div><label><input type="checkbox" name="c2" /><span>[필수] 쿠팡 이용약관 동의 <a href="">&gt;</a></span></label></div>
+              <div><label><input type="checkbox" name="c3" /><span>[필수] 전자금융거래 이용약관 동의 <a href="">&gt;</a></span></label></div>
+              <div><label><input type="checkbox" name="c4" /><span>[필수] 개인정보 수집 및 이용 동의 <a href="">&gt;</a></span></label></div>
+              <div><label><input type="checkbox" name="c5" /><span>[필수] 개인정보 제3자 제공 동의<a href="">&gt;</a></span></label></div>
+              <div><label><input type="checkbox" name="c6" /><span>[선택] 마케팅 목적의 개인정보 수집 및 이용 동의 <a href="">&gt;</a></span></label></div>
+              <div><label><input type="checkbox" name="c7" /><span>[선택] 광고성 정보 수신 동의<a href="">&gt;</a></span></label></div>
+
+              <div><label><input type="checkbox" name="c8" /><span>&nbsp;&nbsp;&nbsp;[선택] 이메일 수신 동의<a href="">&gt;</a></span></label></div>
+              <div><label><input type="checkbox" name="c9" /><span>&nbsp;&nbsp;&nbsp;[선택] SMS, SNS 수신 동의<a href="">&gt;</a></span></label></div>
+              <div><label><input type="checkbox" name="c10" /><span>&nbsp;&nbsp;&nbsp;[선택] 앱 푸시 수신 동의<a href="">&gt;</a></span></label></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div>
+        <button type="button">동의하고 가입하기</button>
+      </div>
+
+      <h6>©Coupang Corp. All rights reserved.</h6>
+
+    </form>
+  </center>
+</body>
+<script>
+  //인풋
+  const id = document.querySelector("input[name='id']");
+  const passwd = document.querySelector("input[name='passwd']");
+  const passwdCheck = document.querySelector("input[name='passwd-c']");
+  const name = document.querySelector("input[name='name']");
+  const phoneNumber = document.querySelector("input[name='phone-number']");
+
+  //체크박스
+  const allCheck = document.querySelector("input[name='check']");
+  const c1 = document.querySelector("input[name='c1']");
+  const c2 = document.querySelector("input[name='c2']");
+  const c3 = document.querySelector("input[name='c3']");
+  const c4 = document.querySelector("input[name='c4']");
+  const c5 = document.querySelector("input[name='c5']");
+  const c6 = document.querySelector("input[name='c6']");
+  const c7 = document.querySelector("input[name='c7']");
+  const c8 = document.querySelector("input[name='c8']");
+  const c9 = document.querySelector("input[name='c9']");
+  const c10 = document.querySelector("input[name='c10']");
+
+  const submit2 = document.querySelector("button[type='button']");
+
+  const form = document.querySelector("form");
+
+  //인풋에 데이터 안들어오면 경고
+  //passwd,passwdCheck값이 다르면 경고
+  //c1~c5 모두 체크하지 않으면 경고
+
+  //c6 체크/해제하면 c7~c10까지 체크/해제
+  //c7 체크하면 c8~c10까지 체크 및 c7체크
+  //c7 체크해제하면 c8~c10까지 체크 해제
+  //c8~c10중 하나이상 체크하면 c7체크 그렇지 않으면 체크 해제
+
+  //모두 동의 기능
+  const checkBoxs = Array.of(c1,c2,c3,c4,c5,c6,c7,c8,c9,c10);
+  allCheck.addEventListener("click", (e) => {
+    checkBoxs.forEach((checkBox) => checkBox.checked = e.target.checked);
+  })
+
+  //1. 인풋에 데이터 안들어오면 경고
+  submit2.addEventListener("click", (e) => {
+  let alertMessage = "";
+  const inputs = [{input : id, content : "아이디"}, 
+                        {input : passwd, content : "비밀번호"},
+                        {input : passwdCheck, content : "비밀번호 확인"},
+                        {input : name, content : "이름"},
+                        {input : phoneNumber, content : "전화번호"}]
+  
+  const emptyInputs = inputs.filter((data) => !data.input.value).map((data) => data.content);
+
+  if(emptyInputs.length != 0)
+  {
+    alertMessage += emptyInputs + "를 입력하세요.";
+    alert(alertMessage);
+    return;
+  }
+
+  //2. passwd, passedCheck가 다르면 경고
+  if(passwd.value !== passwdCheck.value)
+  {
+    alert("비밀번호와 비밀번호 확인값이 다릅니다.");
+    return;
+  }
+
+  //3. c1~c5모두 체크하지 않으면 경고
+  const pilsuCheckBoxs = Array.of(c1,c2,c3,c4,c5);
+  if(pilsuCheckBoxs.some((checkBox) => !checkBox.checked))
+  {
+    alert("모든 필수 항목에 체크하셔야 합니다.");
+    return;
+  }
+
+  form.submit();
+
+  });
+
+  //4. c6 체크/해제하면 c7~c10까지 체크/해제
+  c6.addEventListener("click", (e) => {
+    //console.log(e.target.checked);
+    c7.checked = c8.checked = c9.checked = c10.checked = e.target.checked;
+  })
+
+  //5-1 c7 체크하면 c8~c10까지 체크 및 c6체크
+  //5-2 c7 체크해제하면 c8~c10까지 체크 해제
+  const c8ToC10 = Array.of(c8, c9, c10);
+  c7.addEventListener("click", (e) => {
+    c8ToC10.forEach((checkBox) => checkBox.checked = e.target.checked);
+    if(e.target.checked)
+    {
+      c6.checked = true;
+    }
+  })
+
+  //c8~c10중 하나이상 체크하면 c7체크 그렇지 않으면 체크 해제
+  c8ToC10.forEach((checkBox) => {
+    checkBox.addEventListener("click", (e) => {
+      c7.checked = c8ToC10.some((checkBox) => checkBox.checked);
+    })
+  })
+
+  //각 체크박스에 클릭하면 모든 체크박스를 검사하여 모두동의체크박스 상태 변경 이벤트 추가
+    checkBoxs.forEach((checkBox) => {
+    checkBox.addEventListener("click", (e) => {
+      allCheck.checked = !checkBoxs.some((checkBox) => !checkBox.checked);
+    })
+  })
+
+</script>
+</html>

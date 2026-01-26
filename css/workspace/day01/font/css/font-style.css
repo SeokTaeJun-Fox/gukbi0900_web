@@ -1,0 +1,10 @@
+p {
+    letter-spacing: -1px;
+    text-align: end;
+    white-space: nowrap;
+    border: solid 1px black;
+    width: 200px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-shadow: 5px -1px 8px rgba(0, 0, 0, 0.2);
+}

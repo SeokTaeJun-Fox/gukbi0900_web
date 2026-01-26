@@ -1,0 +1,21 @@
+/* 
+  자식을 부모에게 맞출려고한다.
+*/
+
+#container {
+  width: 1000px;
+  display: flex;
+  /* 
+    flex-wrap
+    - 자식이 부모 크기보다 커지면 다음 줄로 넘겨라
+  */
+  flex-wrap: wrap;
+}
+
+.box {
+  width: 20%;
+  height: 200px;
+  box-sizing: border-box;
+  border:  solid 1px black;
+  background-color: green;
+}

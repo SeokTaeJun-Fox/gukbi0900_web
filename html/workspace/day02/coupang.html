@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="https://login.coupang.com/favicon.ico" type="image/x-icon">
+  <title>회원가입</title>
+</head>
+<body>
+  <center>
+    <div> 
+      <img src="https://static.coupangcdn.com/image/static/login/logo-coupang.x2.20201201.png" alt="" />
+    </div>
+    <div>
+      <h3>회원정보를 입력해주세요</h3>
+    </div>
+
+    <form action="submit">
+      <div>
+        <label>
+          <span>아이디</span><input type="text" placeholder="아이디(이메일)" name="id" />
+        </label>
+      </div>
+
+      <div>
+        <label>
+          <span>비밀번호</span><input type="password" placeholder="비밀번호" name="passwd"  />
+        </label>
+      </div>
+
+      <div>
+        <label>
+          <span>비밀번호 확인</span><input type="password" placeholder="비밀번호 확인" name="passwd-c" />
+        </label>
+      </div>
+
+      <div>
+        <label>
+          <span>이름</span><input type="text" placeholder="이름" name="name" />
+        </label>
+      </div>
+
+      <div>
+        <label for="phone-number">
+          <span>휴대폰번호</span>
+          <span>
+            <select name="phone-frone-num">
+              <option value="korea">+82</option>
+              <option value="nokorea">+80</option>
+              <option value="seventyeight">+78</option>
+            </select>
+            <input type="text" placeholder="휴대폰 번호"  id="phone-number"/>
+          </span>
+        </label>
+      </div>
+
+      <hr />
+
+      <div>
+        <label>
+          <input type="checkbox" name="check" />
+          <span><b>모두 확인하였으며 동의합니다.</b></span>
+        </label>
+        <p>
+          전체 동의에는 필수 및 선택 정보에 대한 동의가 포함되어 있으며, 개별적으로 동의를 선택 하실 수 있습니다. 선택 항목에 대한 동의를 거부하시는 경우에도 서비스 이용이 가능합니다.
+        </p>
+
+        <table border="1">
+          <tr>
+            <td>
+              <div><label><input type="checkbox" name="c1" /><span>[필수] 만 14세 이상입니다</span></label></div>
+              <div><label><input type="checkbox" name="c2" /><span>[필수] 쿠팡 이용약관 동의 <a href="">&gt;</a></span></label></div>
+              <div><label><input type="checkbox" name="c3" /><span>[필수] 전자금융거래 이용약관 동의 <a href="">&gt;</a></span></label></div>
+              <div><label><input type="checkbox" name="c4" /><span>[필수] 개인정보 수집 및 이용 동의 <a href="">&gt;</a></span></label></div>
+              <div><label><input type="checkbox" name="c5" /><span>[필수] 개인정보 제3자 제공 동의<a href="">&gt;</a></span></label></div>
+              <div><label><input type="checkbox" name="c6" /><span>[선택] 마케팅 목적의 개인정보 수집 및 이용 동의 <a href="">&gt;</a></span></label></div>
+              <div><label><input type="checkbox" name="c7" /><span>[선택] 광고성 정보 수신 동의<a href="">&gt;</a></span></label></div>
+
+              <div><label><input type="checkbox" name="c8" /><span>&nbsp;&nbsp;&nbsp;[선택] 이메일 수신 동의<a href="">&gt;</a></span></label></div>
+              <div><label><input type="checkbox" name="c9" /><span>&nbsp;&nbsp;&nbsp;[선택] SMS, SNS 수신 동의<a href="">&gt;</a></span></label></div>
+              <div><label><input type="checkbox" name="c10" /><span>&nbsp;&nbsp;&nbsp;[선택] 앱 푸시 수신 동의<a href="">&gt;</a></span></label></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div>
+        <button type="submit" name="submit">동의하고 가입하기</button>
+      </div>
+
+      <h6>©Coupang Corp. All rights reserved.</h6>
+
+    </form>
+  </center>
+</body>
+</html>

@@ -1,0 +1,32 @@
+.item {
+  /* 
+    border를 추가하면 크기가 증가한다. box-sizing을 사용하면 width,height값이 border값이 포함된다
+  */
+  width: 200px;
+  height: 200px;
+  background-color: orange;
+  border: solid 1px black;
+  /* box-sizing: border-box; */
+}
+
+#item1 {
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 50px;
+}
+
+#item2 {
+  padding: 20px 100px;
+}
+
+#item3{
+  /* 
+   값을 1개만 넣으면 모든 방향에 padding이 들어간다.
+  */
+  padding: 100px;
+}
+
+#item4{
+  padding: 10px 100px 50px 40px;
+}

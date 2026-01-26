@@ -1,0 +1,27 @@
+#whole-window {
+  display: flex;
+  width: 100dvw;
+  height: 100dvh;
+
+  align-items: center;
+  justify-content: center;
+}
+
+#flex-parent {
+    display: inline-flex;
+    flex-direction: column;
+    width: 200px;
+    height: 300px;
+    padding: 20px;
+    /* align-items: center;
+    justify-content: center; */
+    border: solid 1px black;
+
+    gap : 10px;
+}
+
+.flex-child {
+    width: 200px;
+    height: 100px;
+    background-color: blue;
+}

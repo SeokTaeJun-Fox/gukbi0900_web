@@ -1,0 +1,3 @@
+> https://nodejs.org/ko/download
+> v24.12.0 선택
+> Standalone Binary (.zip) 다운로드 - 무설치

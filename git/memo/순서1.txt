@@ -1,0 +1,8 @@
+git init
+작업 후 ~
+git status
+git add [파일명]
+git add .		: 현재폴더
+git commit -m "메세지"
+git log
+git reset --hard [ID]

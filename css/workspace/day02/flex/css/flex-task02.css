@@ -1,0 +1,26 @@
+#whole-window {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100dvw;
+  height: 100dvh;
+}
+
+#flex-parent {
+    border: solid 1px black;
+    width: 410px;
+    height: 320px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+.flex-child {
+  width: 200px;
+  height: 100px;
+  background-color: orange;
+}

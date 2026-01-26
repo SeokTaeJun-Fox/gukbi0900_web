@@ -1,0 +1,54 @@
+/* 
+overflow : auto는 자식크기가 커지면 스크롤이 생긴다
+포지션은 문서의 흐름을 무시한다.
+z-index : z축의 방향들을 우선순위를 정한다.
+
+부모의 릴레이트가 없으면 바로 위의 조상의 릴레이트가 찾는다. 없으면 
+html브라우저의 기준이된다.
+ */
+
+#wrapper {
+  width: 600px;
+  height: 600px;
+  border: solid 2px red;
+  position: relative;
+}
+
+#container {
+  width: 500px;
+  height: 500px;
+  border: solid 2px blue;
+
+  /* position: relative; */
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+}
+
+.box1 {
+  background-color: orange;
+  z-index: 1;
+  right: 0;
+  bottom: 120px;
+}
+
+/* 
+정중앙에 배치하는 방법 첫번째
+  left: calc(50% - 50px);
+  top: calc(50% - 50px);
+*/
+.box2 {
+  background-color: green;
+
+  left: calc(50% - 50px);
+  top: calc(50% - 50px);
+}
+
+.box3 {
+  background-color: pink;
+
+  right: -120px;
+}
