@@ -6,6 +6,7 @@
 
 학원 수강 사이트 : https://itgn.maniaro.net/
 코딩 테스트 연습 : https://school.programmers.co.kr/learn/challenges?order=recent
+다이어그램그리기 : https://app.diagrams.net/
 
 수강 id : seokneko790
 비번 : 4691239189

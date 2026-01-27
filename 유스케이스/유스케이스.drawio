@@ -1,0 +1,73 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 Edg/144.0.0.0" version="29.3.4">
+  <diagram name="페이지-1" id="eUojnnxDM2NJi5byRO6V">
+    <mxGraphModel dx="2245" dy="1957" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="8Ppyp01h5sZDkOgLePoy-1" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;" value="" vertex="1">
+          <mxGeometry height="870" width="870" x="170" y="-50" as="geometry" />
+        </mxCell>
+        <mxCell id="8Ppyp01h5sZDkOgLePoy-2" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;font-size: 14px;&quot;&gt;게시글 작성&lt;/span&gt;" vertex="1">
+          <mxGeometry height="120" width="200" x="190" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="8Ppyp01h5sZDkOgLePoy-3" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;게시판&lt;/h1&gt;" vertex="1">
+          <mxGeometry height="120" width="180" x="184" y="-40" as="geometry" />
+        </mxCell>
+        <mxCell id="8Ppyp01h5sZDkOgLePoy-4" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="Actor" vertex="1">
+          <mxGeometry height="220" width="110" x="-170" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="8Ppyp01h5sZDkOgLePoy-6" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;font-size: 14px;&quot;&gt;게시글 추천&lt;/span&gt;" vertex="1">
+          <mxGeometry height="120" width="200" x="590" y="525" as="geometry" />
+        </mxCell>
+        <mxCell id="8Ppyp01h5sZDkOgLePoy-7" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;font-size: 14px;&quot;&gt;게시글 비추천&lt;/span&gt;" vertex="1">
+          <mxGeometry height="120" width="200" x="190" y="525" as="geometry" />
+        </mxCell>
+        <mxCell id="8Ppyp01h5sZDkOgLePoy-9" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;entryX=0.08;entryY=0.783;entryDx=0;entryDy=0;entryPerimeter=0;" target="8Ppyp01h5sZDkOgLePoy-2" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="-50" y="280" as="sourcePoint" />
+            <mxPoint x="20" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8Ppyp01h5sZDkOgLePoy-13" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;font-size: 14px;&quot;&gt;로그인&lt;/span&gt;" vertex="1">
+          <mxGeometry height="120" width="200" x="680" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="8Ppyp01h5sZDkOgLePoy-15" edge="1" parent="1" source="8Ppyp01h5sZDkOgLePoy-2" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;rounded=0;exitX=0.965;exitY=0.65;exitDx=0;exitDy=0;exitPerimeter=0;" target="8Ppyp01h5sZDkOgLePoy-13" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="515.6679122840842" y="142.75537822626734" as="sourcePoint" />
+            <mxPoint x="430" y="110" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8Ppyp01h5sZDkOgLePoy-16" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;font-size: 14px;&quot;&gt;이미지 업로드&lt;/span&gt;" vertex="1">
+          <mxGeometry height="120" width="200" x="690" as="geometry" />
+        </mxCell>
+        <mxCell id="8Ppyp01h5sZDkOgLePoy-18" edge="1" parent="1" source="8Ppyp01h5sZDkOgLePoy-16" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;rounded=0;entryX=0.97;entryY=0.35;entryDx=0;entryDy=0;entryPerimeter=0;" target="8Ppyp01h5sZDkOgLePoy-2" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="420" y="90" as="sourcePoint" />
+            <mxPoint x="580" y="90" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8Ppyp01h5sZDkOgLePoy-19" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;font-size: 14px;&quot;&gt;게시글 평가&lt;/span&gt;" vertex="1">
+          <mxGeometry height="120" width="200" x="414" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="8Ppyp01h5sZDkOgLePoy-20" edge="1" parent="1" source="8Ppyp01h5sZDkOgLePoy-7" style="endArrow=block;html=1;rounded=0;entryX=0.2;entryY=0.933;entryDx=0;entryDy=0;entryPerimeter=0;strokeColor=default;endFill=0;" target="8Ppyp01h5sZDkOgLePoy-19" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="314" y="420" as="sourcePoint" />
+            <mxPoint x="364" y="370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8Ppyp01h5sZDkOgLePoy-22" edge="1" parent="1" source="8Ppyp01h5sZDkOgLePoy-6" style="endArrow=block;html=1;rounded=0;endFill=0;" target="8Ppyp01h5sZDkOgLePoy-19" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="520" y="420" as="sourcePoint" />
+            <mxPoint x="570" y="370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8Ppyp01h5sZDkOgLePoy-23" edge="1" parent="1" source="8Ppyp01h5sZDkOgLePoy-19" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="8Ppyp01h5sZDkOgLePoy-2" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="390" y="284" as="sourcePoint" />
+            <mxPoint x="550" y="284" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

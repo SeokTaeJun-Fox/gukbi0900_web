@@ -65,6 +65,9 @@ vim 닫을시 >> :q
 2. DangerZone > Delete this repository클릭
 3. 해당 폴더의 깃베쉬에 git remote remove origin 입력
 
+team organization
+
+
 ==============================================================================
 이메일 : moderneuropean81@gmail.com
 이름 : SeokTaeJun-Fox
