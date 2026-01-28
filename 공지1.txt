@@ -9,6 +9,8 @@
 - 메일 제목 : "평일 프론트엔드" 홍길동
 - 메일 내용 : 텍스트를 그대로 붙여넣기, 오류에 대한 설명, 캡쳐
 
+figma 공유 : https://www.figma.com/design/mpKamnnZ1ZbxpB58VcTx46/%EA%B3%B5%EA%B3%B5%EB%8D%B0%EC%9D%B4%ED%84%B0%EA%B3%B5%EC%9C%A0?node-id=0-1&p=f&t=k4dcLHysjQZbotog-0
+
 ====================================================
 2월 23일까지
 1. 내가 개발자가 되려는 이유
