@@ -1,0 +1,6 @@
+react 설치하기
+1. vscode > 터미널 열기
+2. npm i -g yarn 입력
+3. yarn -v 입력하여 버전확인
+4. yarn global add create-react-app 입력
+5. yarn create react-app study 입력
